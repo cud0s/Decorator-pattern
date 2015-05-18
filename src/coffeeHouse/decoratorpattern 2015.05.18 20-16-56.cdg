@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="decoratorpattern">
+  <ClassDiagramComponents>
+    <Class name="Beverage" package="decoratorpattern" visibility="public" isAbstract="true" xPosition="678.0" yPosition="103.0">
+      <Fields>
+        <Field name="description" type="String" visibility="package"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="getDescription" returnType="String" visibility="public"/>
+        <Method name="cost" returnType="double" visibility="public" isAbstract="true"/>
+      </Methods>
+    </Class>
+    <Class name="CondimentDecorator" package="decoratorpattern" visibility="public" isAbstract="true" xPosition="678.0" yPosition="981.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="getDescription" returnType="String" visibility="public" isAbstract="true"/>
+      </Methods>
+    </Class>
+    <Class name="DarkRoast" package="decoratorpattern" visibility="public" xPosition="1499.0" yPosition="163.0">
+      <Fields/>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="cost" returnType="double" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Decaf" package="decoratorpattern" visibility="public" xPosition="1499.0" yPosition="24.0">
+      <Fields/>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="cost" returnType="double" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Espresso" package="decoratorpattern" visibility="public" xPosition="1499.0" yPosition="452.0">
+      <Fields/>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="cost" returnType="double" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="HouseBlend" package="decoratorpattern" visibility="public" xPosition="1499.0" yPosition="302.0">
+      <Fields/>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="cost" returnType="double" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="MainFrame" package="decoratorpattern" visibility="public" xPosition="1578.0" yPosition="688.0">
+      <Fields>
+        <Field name="buttonGroup1" type="javax.swing.ButtonGroup" visibility="private"/>
+        <Field name="darkRoastRadio" type="javax.swing.JRadioButton" visibility="private"/>
+        <Field name="decafRadio" type="javax.swing.JRadioButton" visibility="private"/>
+        <Field name="espressoRadio" type="javax.swing.JRadioButton" visibility="private"/>
+        <Field name="houseBlendRadio" type="javax.swing.JRadioButton" visibility="private"/>
+        <Field name="jButton1" type="javax.swing.JButton" visibility="private"/>
+        <Field name="jLabel1" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel2" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel3" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel4" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel5" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jPanel1" type="javax.swing.JPanel" visibility="private"/>
+        <Field name="mochaBox" type="javax.swing.JCheckBox" visibility="private"/>
+        <Field name="soyBox" type="javax.swing.JCheckBox" visibility="private"/>
+        <Field name="steamedMilkBox" type="javax.swing.JCheckBox" visibility="private"/>
+        <Field name="whipBox" type="javax.swing.JCheckBox" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="initComponents" returnType="// &lt;editor-fold defaultstate=&quot;collapsed&quot; desc=&quot;Generated Code&quot;&gt;//GEN-BEGIN:initComponents void" visibility="private"/>
+        <Method name="jButton1ActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Mocha" package="decoratorpattern" visibility="public" xPosition="995.0" yPosition="501.0">
+      <Fields>
+        <Field name="beverage" type="Beverage" visibility="package"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="Beverage" name="beverage"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getDescription" returnType="String" visibility="public"/>
+        <Method name="cost" returnType="double" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Soy" package="decoratorpattern" visibility="public" xPosition="277.0" yPosition="501.0">
+      <Fields>
+        <Field name="beverage" type="Beverage" visibility="package"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="Beverage" name="beverage"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getDescription" returnType="String" visibility="public"/>
+        <Method name="cost" returnType="double" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="SteamedMilk" package="decoratorpattern" visibility="public" xPosition="505.0" yPosition="501.0">
+      <Fields>
+        <Field name="beverage" type="Beverage" visibility="package"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="Beverage" name="beverage"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getDescription" returnType="String" visibility="public"/>
+        <Method name="cost" returnType="double" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Whip" package="decoratorpattern" visibility="public" xPosition="780.0" yPosition="501.0">
+      <Fields>
+        <Field name="beverage" type="Beverage" visibility="package"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="Beverage" name="beverage"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getDescription" returnType="String" visibility="public"/>
+        <Method name="cost" returnType="double" visibility="public"/>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <IsRelation name="is" source="decoratorpattern.Espresso" target="decoratorpattern.Beverage"/>
+    <IsRelation name="is" source="decoratorpattern.Mocha" target="decoratorpattern.CondimentDecorator"/>
+    <HasRelation name="beverage" source="decoratorpattern.Mocha" target="decoratorpattern.Beverage" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <IsRelation name="is" source="decoratorpattern.HouseBlend" target="decoratorpattern.Beverage"/>
+    <IsRelation name="is" source="decoratorpattern.SteamedMilk" target="decoratorpattern.CondimentDecorator"/>
+    <IsRelation name="is" source="decoratorpattern.Whip" target="decoratorpattern.CondimentDecorator"/>
+    <HasRelation name="beverage" source="decoratorpattern.SteamedMilk" target="decoratorpattern.Beverage" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="beverage" source="decoratorpattern.Soy" target="decoratorpattern.Beverage" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <IsRelation name="is" source="decoratorpattern.DarkRoast" target="decoratorpattern.Beverage"/>
+    <HasRelation name="beverage" source="decoratorpattern.Whip" target="decoratorpattern.Beverage" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <IsRelation name="is" source="decoratorpattern.Soy" target="decoratorpattern.CondimentDecorator"/>
+    <IsRelation name="is" source="decoratorpattern.CondimentDecorator" target="decoratorpattern.Beverage"/>
+    <IsRelation name="is" source="decoratorpattern.Decaf" target="decoratorpattern.Beverage"/>
+  </ClassDiagramRelations>
+</ClassDiagram>
