@@ -17,7 +17,6 @@ public class MainFrame extends javax.swing.JFrame {
      */
 
     public MainFrame() {
-
         initComponents();
         buttonGroup1.add(espressoRadio);
         buttonGroup1.add(houseBlendRadio);
